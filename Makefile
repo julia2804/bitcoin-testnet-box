@@ -64,4 +64,5 @@ stop:
 clean:
 	find 3/regtest/* -not -name 'server.*' -delete
 	find 1/regtest/* -not -name 'server.*' -delete
+	find 4/regtest/* -not -name 'server.*' -delete
 	find 2/regtest/* -not -name 'server.*' -delete
