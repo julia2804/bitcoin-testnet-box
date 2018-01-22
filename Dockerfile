@@ -2,7 +2,7 @@
 
 # Ubuntu 14.04 LTS (Trusty Tahr)
 FROM ubuntu:14.04
-MAINTAINER Sean Lavine 
+MAINTAINER Sean Lavine <lavis88@gmail.com>
 
 # add bitcoind from the official PPA
 RUN apt-get update
@@ -32,5 +32,5 @@ USER tester
 WORKDIR /home/tester/bitcoin-testnet-box
 
 # expose two rpc ports for the nodes to allow outside container access
-EXPOSE 19001 19011
+EXPOSE 19001 19011 19002 1910
 CMD ["/bin/bash"]
