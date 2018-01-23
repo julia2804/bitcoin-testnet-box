@@ -1,17 +1,18 @@
 # bitcoin-testnet-box docker image
 
 # Ubuntu 14.04 LTS (Trusty Tahr)
-FROM ubuntu:16.04
+FROM bitcoin_make
+#FROM ubuntu:16.04
 MAINTAINER julia sunshine <2547919550@qq.com>
 
 # add bitcoind from the official PPA
-RUN apt-get update
-RUN apt-get install --yes software-properties-common
-RUN add-apt-repository --yes ppa:bitcoin/bitcoin
-RUN apt-get update
+#RUN apt-get update
+#RUN apt-get install --yes software-properties-common
+#RUN add-apt-repository --yes ppa:bitcoin/bitcoin
+#RUN apt-get update
 
 # install bitcoind (from PPA) and make
-RUN apt-get install --yes bitcoind make
+#RUN apt-get install --yes bitcoind make
 
 # create a non-root user
 RUN adduser --disabled-login --gecos "" tester
